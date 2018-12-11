@@ -131,6 +131,3 @@ print("RUKA: Bye! sampai ketemu nanti.")
 # Code taken from https://github.com/parulnith/Building-a-Simple-Chatbot-in-Python-using-NLTK/blob/master/chatbot.py
 # Modification has taken place, so this code is original
 # Created by Muhammad Mudrik
-
-#deleted gajelas stuff
-#wiii git
