@@ -17,7 +17,6 @@ raw=f.read()
 raw=raw.lower()# converts to lowercase
 
 sent_tokens = nltk.sent_tokenize(raw)# converts to list of sentences 
-word_tokens = nltk.word_tokenize(raw)# converts to list of words
 
 GREETING_INPUTS = ("halo", "hi", "salam", "hai", "oy","bot",'ay','hei')
 GREETING_RESPONSES = ["hi", "hey", "*nods*", "hai disana",'*dadah pake tangan virtual*','*senyum*', "halo", "aku senang kau berbicara denganku",'naon']

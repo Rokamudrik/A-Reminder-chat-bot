@@ -31,7 +31,7 @@ Magister Teknologi Informasi (MTI) adalah pendidikan tingkat lanjut (strata 2) m
 
 Program Doktor Ilmu Komputer (DIK) merupakan program doktor yang pertama di Indonesia dalam bidang Ilmu Komputer. Program Doktor Ilmu Komputer ini dirancang untuk menghasilkan pakar Ilmu Komputer yang mampu menerapkan ilmunya, baik untuk penyelesaian masalah aplikatif maupun upengembangan ilmu komputer lebih lanjut. 
 
-Fakultas Ilmu Komputer memiliki fasilitas sebagai berikut:
+Fakultas Ilmu Komputer tentu memiliki fasilitas layaknya fasilitas di fakultas lain sebagai berikut:
     -Perpustakaan
     -Kantin dan Restoran Yoshinoya
     -Laboratorium
