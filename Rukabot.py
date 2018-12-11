@@ -132,4 +132,5 @@ print("RUKA: Bye! sampai ketemu nanti.")
 # Modification has taken place, so this code is original
 # Created by Muhammad Mudrik
 
-#WOI INI MASUK DI GIT GAK?
+#deleted gajelas stuff
+#wiii git
