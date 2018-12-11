@@ -121,7 +121,7 @@ while(flag==True):
         jenis_waktu=perintah[-1]
     
         print("RUKA: oke, bakal diingetin buat {} dalam {} {}".format(' '.join(acara), angka, jenis_waktu))  
-        _thread.start_new_thread(reminder,(acara, angka, jenis_waktu,timer))
+        _thread.start_new_thread(reminder,(acara, angka, jenis_waktu,timer)) #ini module biar timernya jalan terpisah sama program
     else:    
         main(user_response)
 
@@ -131,3 +131,4 @@ print("RUKA: Bye! sampai ketemu nanti.")
 # Code taken from https://github.com/parulnith/Building-a-Simple-Chatbot-in-Python-using-NLTK/blob/master/chatbot.py
 # Modification has taken place, so this code is original
 # Created by Muhammad Mudrik for TP4 Task
+# Task to fullfill DDP1 Final Mini Project
