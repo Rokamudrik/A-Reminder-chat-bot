@@ -130,6 +130,5 @@ print("RUKA: Bye! sampai ketemu nanti.")
 # Source code https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
 # Code taken from https://github.com/parulnith/Building-a-Simple-Chatbot-in-Python-using-NLTK/blob/master/chatbot.py
 # Modification has taken place, so this code is original
-# Created by Muhammad Mudrik
-
+# Created by Muhammad Mudrik for TP4 Task
 #WOI INI MASUK DI GIT GAK?
