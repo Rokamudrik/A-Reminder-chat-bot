@@ -20,7 +20,9 @@ sent_tokens = nltk.sent_tokenize(raw)# converts to list of sentences
 
 GREETING_INPUTS = ("halo", "hi", "salam", "hai", "oy","bot",'ay','hei')
 GREETING_RESPONSES = ["hi", "hey", "*nods*", "hai disana",'*dadah pake tangan virtual*','*senyum*', "halo", "aku senang kau berbicara denganku",'naon']
-Confused_responses =['umm, itu privasi. saya gabisa jawab.',"maksudmu?",'maaf?', 'maksudnya?', 'tolong gunakan bahasa indonesia yang baik dan benar', 'kau manusia, kok aku gak ngerti kau ngomong apa.', "maaf, aku gangerti kamu ngomong apa", 'apa?','hah', 'kursus bahasa indonesia gih.','bisa ngetik lebih baik tidak?']
+Confused_responses =['umm, itu privasi. saya gabisa jawab.',"maksudmu?",'maaf?', 'maksudnya?', 'tolong gunakan bahasa indonesia yang baik dan benar', 
+                     'kau manusia, kok aku gak ngerti kau ngomong apa.', "maaf, aku gangerti kamu ngomong apa", 'apa?',
+                     'hah', 'kursus bahasa indonesia gih.','bisa ngetik lebih baik tidak?']
 
 def LemNormalize(text):
     remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
@@ -47,12 +49,15 @@ def response(user_response):
 
     TfidfVec = TfidfVectorizer(tokenizer=LemNormalize)
     tfidf = TfidfVec.fit_transform(sent_tokens)
-    #TF IDF ini gunanya buat bikn statistik numerikal suatu kata untuk memberi gambaran seberapa seringnya kemunculan/berat kata itu dalam dokumen.
-    #menghitungnya menggunakan rumus khusus
+    # TF IDF ini gunanya buat bikn statistik numerikal suatu kata untuk memberi 
+    # gambaran seberapa seringnya kemunculan/berat kata itu dalam dokumen.
+    # menghitungnya menggunakan rumus khusus
     
     vals = cosine_similarity(tfidf[-1], tfidf) 
-    # Ini buat mencocokan antara kata input dari user(yang baru dimasukin ke list(biar 'kata'nya juga ada bobot(dalam vektor))) dengan isi list
-    # nanti hasil perintah ini berupa list yang isinya kecocokan setiap item list terhadap input user dalam besaran sudut, semakin mendekati 1 maka semakin mirip katanya.
+    # Ini buat mencocokan antara kata input dari user(yang baru dimasukin ke list
+    # (biar 'kata'nya juga ada bobot(dalam vektor))) dengan isi list
+    # nanti hasil perintah ini berupa list yang isinya kecocokan setiap item list 
+    # terhadap input user dalam besaran sudut, semakin mendekati 1 maka semakin mirip katanya.
     idx=vals.argsort()[0][-2]
     flat = vals.flatten() #di flatten karena hasilnya list dalem list
     flat.sort()
